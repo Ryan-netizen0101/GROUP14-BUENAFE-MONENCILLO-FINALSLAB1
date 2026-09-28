@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Bangers", cursive;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  color: #111;
+  background-color: #fff4c2;
+}
+
+/* Header */
+header {
+  text-align: center;
+  color: white;
+  background-color: #1b2a49;
+  border-bottom: 6px solid #111;
+  padding: 25px 15px;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 72px;
+  font-weight: normal;
+  letter-spacing: 4px;
+  background-color: #e63946;
+  border: 4px solid #111;
+  box-shadow: 6px 6px 0 #111;
+  text-shadow: 3px 3px 0 #111;
+  padding: 0 25px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 22px;
+}
+
+/* Sticky navigation */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  background-color: #ffd60a;
+  border-bottom: 4px solid #111;
+}
+
+nav a {
+  color: #111;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 10px 30px;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #e63946;
+}
+
+/* Container */
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* The start button column follows you while you read the steps */
+.column-right {
+  position: sticky;
+  top: 70px;
+}
+
+/* Comic boxes */
+.box {
+  background-color: white;
+  border: 4px solid #111;
+  box-shadow: 6px 6px 0 #111;
+  padding: 20px;
+}
+
+.box h2 {
+  font-size: 30px;
+  font-weight: normal;
+  color: white;
+  background-color: #1d6fdc;
+  border: 3px solid #111;
+  padding: 2px 12px;
+  margin-bottom: 15px;
+}
+
+.box p {
+  margin-bottom: 8px;
+}
+
+.intro {
+  margin-bottom: 15px;
+}
+
+/* Instruction steps */
+.steps {
+  margin-left: 25px;
+}
+
+.steps li {
+  margin-bottom: 16px;
+}
+
+.steps li::marker {
+  font-size: 26px;
+  color: #e63946;
+}
+
+.steps strong {
+  display: block;
+  font-weight: normal;
+  font-size: 26px;
+  color: #e63946;
+}
+
+.steps span {
+  font-size: 19px;
+}
+
+.steps b {
+  font-weight: normal;
+  background-color: #ffd60a;
+  padding: 0 5px;
+}
+
+/* START area */
+#checker {
+  background-color: #ffd60a;
+  border-width: 6px;
+  box-shadow: 10px 10px 0 #111;
+}
+
+#checker h2 {
+  background-color: #e63946;
+  font-size: 36px;
+  text-align: center;
+}
+
+.click-here {
+  position: relative;
+  width: 200px;
+  margin: 0 auto 22px auto;
+  font-size: 32px;
+  text-align: center;
+  color: #111;
+  background-color: white;
+  border: 4px solid #111;
+  border-radius: 20px;
+  padding: 4px;
+}
+
+/* Big START button */
+button {
+  display: block;
+  width: 100%;
+  font-family: "Bangers", cursive;
+  font-size: 60px;
+  letter-spacing: 6px;
+  color: white;
+  background-color: #00852a;
+  border: 6px solid #111;
+  box-shadow: 8px 8px 0 #111;
+  text-shadow: 3px 3px 0 #111;
+  padding: 14px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d6fdc;
+  animation: none;
+  transform: scale(1.05);
+}
+
+button:active {
+  box-shadow: none;
+  transform: translate(8px, 8px);
+}
+
+button:focus-visible {
+  outline: 4px dashed #111;
+  outline-offset: 4px;
+}
+
+/* Result area */
+#resultCard {
+  background-color: white;
+  border: 3px dashed #111;
+  padding: 15px;
+}
+
+.message {
+  font-size: 28px;
+  text-align: center;
+  background-color: #eeeeee;
+  border: 3px solid #111;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+#resultCard span {
+  color: #1d6fdc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: white;
+  background-color: #1b2a49;
+  border-top: 6px solid #111;
+  padding: 20px 15px;
+}
+
+.made-by {
+  font-size: 22px;
+  color: #ffd60a;
+  margin-bottom: 8px;
+}
+
+.names {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.name {
+  font-size: 26px;
+  color: #111;
+  background-color: white;
+  border: 3px solid #111;
+  box-shadow: 4px 4px 0 #e63946;
+  padding: 2px 16px;
+}
+
+.and {
+  font-size: 30px;
+  color: #ffd60a;
+}
+
+.course {
+  font-size: 16px;
+}
+
+/* Responsive Design*/
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .column-right {
+    position: static;
+  }
+
+  header h1 {
+    font-size: 44px;
+  }
+
+  button {
+    font-size: 44px;
+  }
+}

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANOSKORMO?</title>
+
+    <!-- Bangers font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Link-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1>ANOSKORMO?</h1>
+      <p class="subtitle">Type your score and see your result!</p>
+    </header>
+
+    <!-- NAVIGATION (sticky) -->
+    <nav>
+      <a href="#instructions">How to Use</a>
+      <a href="#checker">Press Start</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+      <!-- LEFT COLUMN: instructions -->
+      <div class="column">
+        <section class="box" id="instructions">
+          <h2>How to Use</h2>
+          <p class="intro">
+            Follow these steps one by one. Pop-up boxes will appear on your
+            screen, so read each one carefully.
+          </p>
+
+          <ol class="steps">
+            <li>
+              <strong>Press the START button</strong>
+              <span
+                >Find the big red START button and click it. A welcome box will
+                pop up. Click <b>OK</b> to move on.</span
+              >
+            </li>
+            <li>
+              <strong>Type your name</strong>
+              <span
+                >A box will ask for your name. Type your name using
+                <b>letters only</b>, then click <b>OK</b>. Do not leave it empty
+                or use numbers and symbols.</span
+              >
+            </li>
+            <li>
+              <strong>Type your score</strong>
+              <span
+                >The next box will ask for your score. Type a number from
+                <b>1 to 100</b>, then click <b>OK</b>. Do not use letters, zero,
+                negative numbers, or numbers above 100.</span
+              >
+            </li>
+            <li>
+              <strong>Confirm to continue</strong>
+              <span
+                >A last box will ask if you want to continue. Click <b>OK</b> to
+                see your result, or <b>Cancel</b> to stop.</span
+              >
+            </li>
+            <li>
+              <strong>Read your result</strong>
+              <span
+                >Your name, score, and remark (Excellent, Passed, or Failed)
+                will show in the Result box. If you made a mistake, you will see
+                a message telling you what to fix.</span
+              >
+            </li>
+            <li>
+              <strong>Try again</strong>
+              <span>Want to check another score? Just press START again.</span>
+            </li>
+          </ol>
+        </section>
+      </div>
+
+      <!-- RIGHT COLUMN: start button -->
+      <div class="column column-right">
+        <section class="box" id="checker">
+          <h2>Ready?</h2>
+
+          <p class="click-here">CLICK HERE!</p>
+          <button id="startBtn">START!</button>
+
+          <!-- AREA NA NEED NG JAVASCRIPT -->
+          <div id="resultCard">
+            <p class="message" id="message">Press START to begin!</p>
+            <p><strong>Name:</strong> <span id="showName">---</span></p>
+            <p><strong>Score:</strong> <span id="showScore">---</span></p>
+            <p><strong>Remark:</strong> <span id="showRemark">---</span></p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p class="made-by">Made by:</p>
+      <div class="names">
+        <span class="name">Buenafe</span>
+        <span class="and">&amp;</span>
+        <span class="name">Monencillo</span>
+      </div>
+      <p class="course">
+        CCS114 - Web Technologies | Finals Laboratory 1 | 2IT-B
+      </p>
+    </footer>
+
+    <!-- JavaScript-->
+    <script src="script.js"></script>
+  </body>
+</html>
